@@ -41,7 +41,7 @@ export const generatePDF = (billData) => {
       ['Tenant Units', `${billData.tenantUnits}`],
       ['Tenant Total Units (Tenant + 0.75 * Motor)', `${billData.tenantTotalUnits.toFixed(2)}`],
       ['Electricity Bill (Govt. Rate @ Rs.9)', `Rs. ${billData.govtElectricityBill.toFixed(2)}`],
-      [`Discount Applied (@ Rs.${billData.discountRate})`, `₹ ${billData.discountApplied.toFixed(2)}`],
+      [`Discount Applied (@ Rs.${billData.discountRate})`, `Rs. ${billData.discountApplied.toFixed(2)}`],
       ['Final Electricity Bill', `Rs. ${billData.finalElectricityBill.toFixed(2)}`],
       ['Water Bill', `Rs. ${billData.waterBill.toFixed(2)}`],
       ['Tanker Split', `Rs. ${billData.tankerSplit.toFixed(2)}`],
